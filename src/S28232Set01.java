@@ -102,15 +102,6 @@ public class S28232Set01 extends Frame {
 
     }
 
-    /*@Override
-    protected void processWindowEvent(WindowEvent e) {
-        if (e.getID() == WindowEvent.WINDOW_CLOSING) {
-            dispose();
-            System.exit(0);
-        }
-        super.processWindowEvent(e);
-    }*/
-
     @Override
     public void paint(Graphics g) {
 
@@ -128,16 +119,19 @@ public class S28232Set01 extends Frame {
             int pNum = input.read();
 
             //To fill a full screen instead of the square shape  = > change '&&' to '||'
-            for (int x = this.getWidth() / 2, y = this.getHeight() / 2, counter = 1, state = 0, numOfBytes = 1, numOfSteps = 1; x <= this.getWidth() && y <= this.getHeight(); ) {
+            for (int x = this.getWidth() / 2, y = this.getHeight() / 2,
+                 counter = 1, state = 0, numOfBytes = 1, numOfSteps = 1;
+                 x <= this.getWidth() && y <= this.getHeight(); ) {
 
                 for (int i = 0; i < numOfSteps; i++) {
                     if (counter == pNum) {
+
                         //Remove commenting of the lines below to make it more fashionable
-//                        g.setColor(new Color(
-//                                (float) Math.random(),
-//                                (float) Math.random(),
-//                                (float) Math.random()
-//                        ));
+                        /*g.setColor(new Color(
+                                (float) Math.random(),
+                                (float) Math.random(),
+                                (float) Math.random()
+                        ));*/
 
                         g.fillRect(x, y, 1, 1);
 
