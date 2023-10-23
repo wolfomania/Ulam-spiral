@@ -3,7 +3,7 @@ package src;
 import java.awt.*;
 import java.io.*;
 
-public class S28232Set01 extends Frame {
+public class Main extends Frame {
 
     public static void main(String[] args) {
 
@@ -19,7 +19,7 @@ public class S28232Set01 extends Frame {
         /*
         Amount of prime numbers
 
-        Probably calculating first number in lines for numbers.bin
+        Calculating first number in lines for numbers.bin
         */
         if(!f.exists()){
             try (DataOutputStream out = new DataOutputStream(new FileOutputStream(numb))
@@ -91,10 +91,10 @@ public class S28232Set01 extends Frame {
         //End of pre-calculation
         //
 
-        new S28232Set01();
+        new Main();
 
     }
-    public S28232Set01() {
+    public Main() {
 
         super();
         this.setSize(640, 640);
