@@ -8,15 +8,15 @@ prime numbers on a plane. The Ulam spiral consists of points on the plane, where
 points represent consecutive natural numbers, and the points representing prime numbers
 are usually highlighted in color.
 
-![img.png](img.png) (spiral)
-![img_1.png](img_1.png) (Ulam spiral)
+![img.png](images/img.png) (spiral) 
+![img_1.png](images/img_1.png) (Ulam spiral)
 
 ## Project requirements
 
 1. Write a Java program using the AWT library that generates an Ulam spiral. Assume
 that the generated spiral will start (be anchored) in the middle of the screen and will be
 drawn in the form of a square filling the entire application window.
-3. Because checking whether a number is prime is a costly operation, make sure that
+2. Because checking whether a number is prime is a costly operation, make sure that
 the prime numbers for a square with a side length 10 times larger than the application
 window being opened are calculated during the first application run. Save the calculated
 data in a binary file according to the following format:
