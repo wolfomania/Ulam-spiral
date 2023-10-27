@@ -121,12 +121,12 @@ public class Main extends Frame {
             //To fill a full screen instead of the square shape  = > change '&&' to '||'
             for (int x = this.getWidth() / 2, y = this.getHeight() / 2,
                  counter = 1, state = 0, numOfBytes = 1, numOfSteps = 1;
-                 x <= this.getWidth() && y <= this.getHeight(); ) {
+                 x <= this.getWidth() /*here*/ && y <= this.getHeight(); ) {
 
                 for (int i = 0; i < numOfSteps; i++) {
                     if (counter == pNum) {
 
-                        //Remove commenting of the lines below to make it more fashionable
+                        //Remove commenting of the lines below to make it colourful
                         /*g.setColor(new Color(
                                 (float) Math.random(),
                                 (float) Math.random(),
