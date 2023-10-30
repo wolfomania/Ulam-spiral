@@ -1,6 +1,8 @@
 
 # Ulam-spiral
 
+The very first project made during my studies.
+
 ## Description
 
 The Ulam spiral is a specific type of graphic created by visualizing the sequence of
